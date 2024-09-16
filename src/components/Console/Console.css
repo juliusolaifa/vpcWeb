@@ -1,0 +1,50 @@
+.console-wrapper {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+  font-family: monospace;
+}
+
+.console-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.console-prompt {
+  color: #00ff00; /* Green prompt */
+}
+
+.console-input {
+  flex: 1;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  padding: 5px;
+}
+
+.console-command {
+  color: #00ff00; /* Green for commands */
+}
+
+.console-result {
+  color: #fff; /* White for results */
+  margin: 5px 0;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+.console-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.console-table th, .console-table td {
+  border: 1px solid #fff;
+  padding: 5px;
+  text-align: left;
+  color: #fff;
+}
