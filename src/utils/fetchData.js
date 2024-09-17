@@ -1,7 +1,9 @@
-// utils/fetchData.js
-const fetchData = async ({ url, queryParams = {} }) => {
+const BASE_URL = 'http://127.0.0.1:3240';
+
+// Utility function to fetch data from the API
+const fetchData = async (endpoint, queryParams = {}) => {
   const queryString = new URLSearchParams(queryParams).toString();
-  const fullUrl = queryString ? `${url}?${queryString}` : url;
+  const fullUrl = queryString ? `${BASE_URL}${endpoint}?${queryString}` : `${BASE_URL}${endpoint}`;
 
   try {
     const response = await fetch(fullUrl);
